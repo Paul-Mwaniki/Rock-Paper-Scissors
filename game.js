@@ -7,7 +7,7 @@ let CompChoice = function getComputerChoice(){
 
 function playRound(userChoice, getComputerChoice){
 
-    let user = prompt("Enter either rock,paper or scissors");
+    let user = prompt("Enter either rock,paper or scissors").toLowerCase();
     console.log("User Selected: " + user);
     let comp = CompChoice();
     console.log("Computer Selected: " + comp);
