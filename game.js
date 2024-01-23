@@ -112,6 +112,69 @@ btnRock.addEventListener('click', () =>{
     }
 })
 
+    /*Paper button event listeners*/
+const btnPaper = document.getElementById('paper');
+
+
+btnPaper.addEventListener('click', () =>{
+
+    let userChoice = "Paper";
+    let computerChoice = CompChoice();
+    console.log(userChoice);
+    console.log(computerChoice);
+
+    if(computerChoice=="scissors"){
+        let result = "Computer wins";
+        console.log(result);
+        compScore += 1;
+        console.log("User Score is" + userScore);
+        console.log("Computer Score is" + compScore);
+    }else if (computerChoice=="rock"){
+        let result = "User wins";
+        console.log(result);
+        userScore += 1;
+        console.log("User Score is" + userScore);
+        console.log("Computer Score is" + compScore);
+    }else{
+        let result = "draw";
+        console.log(result);
+        console.log("User Score is" + userScore);
+        console.log("Computer Score is" + compScore);
+    }
+})
+
+  /*Paper button event listeners*/
+  const btnScissors = document.getElementById('scissors');
+
+
+  btnScissors.addEventListener('click', () =>{
+  
+      let userChoice = "scissors";
+      let computerChoice = CompChoice();
+      console.log(userChoice);
+      console.log(computerChoice);
+  
+      if(computerChoice=="rock"){
+          let result = "Computer wins";
+          console.log(result);
+          compScore += 1;
+          console.log("User Score is" + userScore);
+          console.log("Computer Score is" + compScore);
+      }else if (computerChoice=="paper"){
+          let result = "User wins";
+          console.log(result);
+          userScore += 1;
+          console.log("User Score is" + userScore);
+          console.log("Computer Score is" + compScore);
+      }else{
+          let result = "draw";
+          console.log(result);
+          console.log("User Score is" + userScore);
+          console.log("Computer Score is" + compScore);
+      }
+  })
+
+  
 /*
 function game(){
 
