@@ -77,6 +77,41 @@ let play = function playRound(userChoice, getComputerChoice){
  
     
 };
+
+let userScore = 0;
+let compScore = 0;
+/*Event listeners for the RPS buttons - they call a specifc round*/
+    /*Rock button event listeners*/
+const btnRock = document.getElementById('rock');
+
+
+btnRock.addEventListener('click', () =>{
+
+    let userChoice = "Rock";
+    let computerChoice = CompChoice();
+    console.log(userChoice);
+    console.log(computerChoice);
+
+    if(computerChoice=="paper"){
+        let result = "Computer wins";
+        console.log(result);
+        compScore += 1;
+        console.log("User Score is" + userScore);
+        console.log("Computer Score is" + compScore);
+    }else if (computerChoice=="scissors"){
+        let result = "User wins";
+        console.log(result);
+        userScore += 1;
+        console.log("User Score is" + userScore);
+        console.log("Computer Score is" + compScore);
+    }else{
+        let result = "draw";
+        console.log(result);
+        console.log("User Score is" + userScore);
+        console.log("Computer Score is" + compScore);
+    }
+})
+
 /*
 function game(){
 
