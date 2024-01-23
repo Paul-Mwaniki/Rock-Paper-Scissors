@@ -114,9 +114,13 @@ btnRock.addEventListener('click', () =>{
     if(compScore==3){
         console.log("Computer has won the game");
         console.log("Game ended, play again");
+        userScore = 0;
+        compScore = 0;
     }else if (userScore==3) {
         console.log("User has won the game");
-        console.log("Game ended, play again")
+        console.log("Game ended, play again");
+        userScore = 0;
+        compScore = 0;
     } else {
         console.log("Continue Playing");
     }
@@ -155,9 +159,13 @@ btnPaper.addEventListener('click', () =>{
     if(compScore==3){
         console.log("Computer has won the game");
         console.log("Game ended, play again");
+        userScore = 0;
+        compScore = 0;
     }else if (userScore==3) {
         console.log("User has won the game");
-        console.log("Game ended, play again")
+        console.log("Game ended, play again");
+        userScore = 0;
+        compScore = 0;
     } else {
         console.log("Continue Playing");
     }
@@ -193,12 +201,17 @@ btnPaper.addEventListener('click', () =>{
           console.log("User Score is" + userScore);
           console.log("Computer Score is" + compScore);
       }
+
       if(compScore==3){
         console.log("Computer has won the game");
         console.log("Game ended, play again");
+        userScore = 0;
+        compScore = 0;
     }else if (userScore==3) {
         console.log("User has won the game");
-        console.log("Game ended, play again")
+        console.log("Game ended, play again");
+        userScore = 0;
+        compScore = 0;
     } else {
         console.log("Continue Playing");
     }
