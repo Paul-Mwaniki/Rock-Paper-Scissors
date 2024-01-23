@@ -77,7 +77,7 @@ let play = function playRound(userChoice, getComputerChoice){
  
     
 };
-
+/*
 function game(){
 
     let comp_final_result=0;
@@ -111,6 +111,7 @@ function game(){
     }
 
 }
+*/
  
 
 
